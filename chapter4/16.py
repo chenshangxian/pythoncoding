@@ -1,6 +1,5 @@
 import turtle
 
-
 myTurtle = turtle.Turtle()
 myTurtle.speed(0)  
 myTurtle.setheading(90)

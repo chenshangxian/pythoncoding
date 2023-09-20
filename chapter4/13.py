@@ -1,8 +1,8 @@
 def population_growth(starting_population, daily_increase, days):
     current_population = starting_population
-    print("Day\tApproximate Population")
+    print('Day'"Approximate Population")
     for day in range(1, days + 1):
-        print(f"{day}\t{current_population:.5f}")
+        print(days,current_population)
         current_population += current_population * (daily_increase / 100)
         
 starting_organisms = float(input("Enter the starting number of organisms: "))

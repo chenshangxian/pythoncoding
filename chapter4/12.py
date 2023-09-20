@@ -9,4 +9,4 @@ if number < 0:
     print("The entered number should be nonnegative.")
 else:
     fact = factorial(number)
-    print(f"{number}! = {fact}")
+    print(number,"!",fact)

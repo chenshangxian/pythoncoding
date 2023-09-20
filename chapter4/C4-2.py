@@ -4,4 +4,4 @@ def calculate_calories_burned(minutes):
 
 for time in [10, 15, 20, 25, 30]:
     calories = calculate_calories_burned(time)
-    print(f"After {time} minutes, you have burned {calories} calories.")
+    print("After",time, "minutes", "you have burned",calories,)
