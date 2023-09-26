@@ -4,8 +4,8 @@ def main():
         {"name": "Main Street Pizza Company", "vegetarian": True, "vegan": False, "gluten_free": True},
         {"name": "Corner Café", "vegetarian": True, "vegan": True, "gluten_free": True},
         {"name": "Mama’s Fine Italian", "vegetarian": True, "vegan": False, "gluten_free": False},
-        {"name": "The Chef’s Kitchen", "vegetarian": True, "vegan": True, "gluten_free": True}
-    ]
+        {"name": "The Chef’s Kitchen", "vegetarian": True, "vegan": True, "gluten_free": True} 
+        ]
 
     vegetarian = input("Is anyone in your party a vegetarian? ").lower() == 'yes'
     vegan = input("Is anyone in your party a vegan? ").lower() == 'yes'
