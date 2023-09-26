@@ -21,7 +21,7 @@ def determine_winner(user_choice, computer_choice):
 def main():
     computer_choice = get_computer_choice()
     user_choice = input("Enter your choice (rock, paper, scissors): ").lower()
-    print(f"The computer chose: {computer_choice}")
+    print("The computer chose:" ,computer_choice,)
     winner = determine_winner(user_choice, computer_choice)
     if winner == 'tie':
         print("It's a tie! Play again.")
