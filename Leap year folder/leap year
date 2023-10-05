@@ -1,0 +1,28 @@
+def is_leap_year(year): # Define a function to check if a given year is a leap year
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+def get_next_date(month, day, year, days_to_skip):
+    months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    while days_to_skip > 0:
+        # Calculate the remaining days in the current month
+        remaining_days = days_in_month[months.index(month)] - day
+        # Check if the remaining days exceed the days we want to skip
+        if days_to_skip <= remaining_days:
+            day += days_to_skip
+            days_to_skip = 0
+        else:
+            # If not, move to the next month and update the days to skip
+            days_to_skip -= (remaining_days + 1)
+            day = 1
+            month_index = (months.index(month) + 1) % 12
+            month = months[month_index]
+            # If we move to a new year, increment the year
+            if month_index == 0:
+                year += 1
+    return month, day, year  # Return the computed date
+month = input("Enter the month（speeled out）: ")
+day = int(input("Enter the day: "))
+year = int(input("Enter the year: "))
+days_to_skip = int(input("Enter the number of days to skip (1-20): "))
+new_month, new_day, new_year = get_next_date(month, day, year, days_to_skip)
+print(f"After skipping, the date is: {new_month} {new_day}, {new_year}")
