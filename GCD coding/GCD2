@@ -1,0 +1,8 @@
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+num1 =int(input("please enter the greater of the two numbers: "))
+num2 =int(input("please enter the smaller of the two numbers:"))
+result = gcd(num1, num2)
+print("The GCD of",num1,"and",num2,"is",result)
