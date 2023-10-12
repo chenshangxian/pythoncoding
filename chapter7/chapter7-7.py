@@ -1,6 +1,6 @@
 def main():
     correct_answers = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
-    with open('student_answers.txt', 'r') as file:
+    with open('/Users/VincentChen/Desktop/student_answers.txt') as file:
         student_answers = file.readlines()
     student_answers = [answer.strip() for answer in student_answers]
     passed, correct_count, incorrect_answers = check_answers(correct_answers, student_answers)
