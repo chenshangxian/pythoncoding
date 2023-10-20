@@ -37,7 +37,7 @@ def main():
             if(ans_player==questions_list[j].get_correct_answer()):
                 scores[i]+=1
 
-    print("\nScores:")
+    print("Scores:")
     for i in range(2):
         print("player",i+1,"gets",scores[i],"points")
 
