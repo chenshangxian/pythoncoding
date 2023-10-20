@@ -1,3 +1,12 @@
+# File: <NAME OF FILE>
+# Description: <A DESCRIPTION OF YOUR PROGRAM>
+# Assignment Name and Number: 
+#
+# Name: <YOUR NAME>
+# GitHub: <YOUR GitHub>
+#
+# On my honor, <YOUR NAME>, this programming assignment is my own work
+# and I have not provided this code to any other student.
 def main():
     correct_answers = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
     with open('/Users/VincentChen/Desktop/student_answers.txt') as file:

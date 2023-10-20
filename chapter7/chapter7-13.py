@@ -1,3 +1,12 @@
+# File: <NAME OF FILE>
+# Description: <A DESCRIPTION OF YOUR PROGRAM>
+# Assignment Name and Number: 
+#
+# Name: <YOUR NAME>
+# GitHub: <YOUR GitHub>
+#
+# On my honor, <YOUR NAME>, this programming assignment is my own work
+# and I have not provided this code to any other student.
 import random
 def read_responses(filename):
     with open(filename, 'r') as file:

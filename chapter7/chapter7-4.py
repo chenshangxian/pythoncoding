@@ -1,3 +1,12 @@
+# File: <Number Analysis Program>
+# Description: <It can store the numbers in a list then display the data:>
+# Assignment Name and Number: 4. Number Analysis Program
+#
+# Name: <Vincent Chen>
+# GitHub: <https://github.com/chenshangxian/pythoncoding>
+#
+# On my honor, <Vincent Chen>, this programming assignment is my own work
+# and I have not provided this code to any other student.
 def main():
     Number_Analysis_program=[]
     for Number in range(1, 21):
