@@ -1,7 +1,6 @@
 # File: <Galilean Moons of Jupiter>
 # Description: <It can let the user enter the name of a Galilean moon of Jupiter, then it displays the moon’s mean radius, surface gravity and orbital period.>
 # Assignment Name and Number: 1. Galilean Moons of Jupiter
-#
 # Name: <Vincent Chen>
 # GitHub: <https://github.com/chenshangxian/pythoncoding>
 #
