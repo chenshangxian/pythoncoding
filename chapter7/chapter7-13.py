@@ -1,6 +1,6 @@
-# File: <Falling Distance>
-# Description: <It can call the function in a loop that passes the values 1 through 10 as arguments and displays the return value>
-# Assignment Name and Number:13. Falling Distance
+# File: <Magic 8 Ball>
+# Description: <It can read the responses from the file into a list.Prompt the user to ask a question, then display one of the responses, randomly selected from the list.Repeat until the user is ready to quit.>
+# Assignment Name and Number:13.Magic 8 Ball
 #
 # Name: <Vincent Chen>
 # GitHub: <https://github.com/chenshangxian/pythoncoding>
@@ -9,20 +9,21 @@
 # and I have not provided this code to any other student.
 import random
 def read_responses(filename):
-    with open(filename, 'r') as file:
-        responses = file.readlines()
-    return [response.strip() for response in responses]
+    infile = open(filename, 'r')
+    contents = infile.read()
+    infile.close()
+    return [response.strip() for response in contents.splitlines()]
 def magic_8_ball(responses):
     while True:
         question = input("Ask the Magic 8 Ball a yes or no question (or press Enter to quit): ")
         if not question:
             break
-        if input("Shake the Magic 8 Ball? (Press Enter to shake, or type 'quit' to exit): ").strip().lower() == 'quit':
+        if input("Shake the Magic 8 Ball? (Press Enter to shake, or type 'quit' to exit): ")== 'quit':
             break
         else:
             random_response = random.choice(responses)
             print("You asked:", question)
-            print(f"Magic 8 Ball says: {random_response}\n")
+            print("Magic 8 Ball says:",random_response)
 responses = read_responses("/Users/VincentChen/Desktop/8_ball_responses.txt")
 if responses:
     print("Welcome to the Magic 8 Ball!")
