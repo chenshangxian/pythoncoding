@@ -1,6 +1,6 @@
-# File: <NAME OF FILE>
-# Description: <A DESCRIPTION OF YOUR PROGRAM>
-# Assignment Name and Number: 
+# File: <Capital Quiz>
+# Description: < It can randomly quiz the user by displaying the name of a state and asking the user to enter that state’s capital and keep a count of the number of correct and incorrect responses. >
+# Assignment Name and Number: 2. Capital Quiz
 #
 # Name: <Vincent Chen>
 # GitHub: <https://github.com/chenshangxian/pythoncoding>
