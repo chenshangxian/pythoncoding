@@ -1,11 +1,11 @@
-# File: <NAME OF FILE>
-# Description: <A DESCRIPTION OF YOUR PROGRAM>
-# Assignment Name and Number: 
+# File: <Falling Distance>
+# Description: <It can call the function in a loop that passes the values 1 through 10 as arguments and displays the return value>
+# Assignment Name and Number:13. Falling Distance
 #
-# Name: <YOUR NAME>
-# GitHub: <YOUR GitHub>
+# Name: <Vincent Chen>
+# GitHub: <https://github.com/chenshangxian/pythoncoding>
 #
-# On my honor, <YOUR NAME>, this programming assignment is my own work
+# On my honor, <Vincent Chen>, this programming assignment is my own work
 # and I have not provided this code to any other student.
 import random
 def read_responses(filename):
@@ -21,7 +21,7 @@ def magic_8_ball(responses):
             break
         else:
             random_response = random.choice(responses)
-            print(f"You asked: {question}")
+            print("You asked:", question)
             print(f"Magic 8 Ball says: {random_response}\n")
 responses = read_responses("/Users/VincentChen/Desktop/8_ball_responses.txt")
 if responses:

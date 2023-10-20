@@ -1,11 +1,11 @@
-# File: <NAME OF FILE>
-# Description: <A DESCRIPTION OF YOUR PROGRAM>
-# Assignment Name and Number: 
+# File: <Stadium Seating>
+# Description: <It can ask how many tickets for each class of seats were sold, then displays the amount of income generated from ticket sales.>
+# Assignment Name and Number:7. Stadium Seating
 #
-# Name: <YOUR NAME>
-# GitHub: <YOUR GitHub>
+# Name: <Vincent Chen>
+# GitHub: <https://github.com/chenshangxian/pythoncoding>
 #
-# On my honor, <YOUR NAME>, this programming assignment is my own work
+# On my honor, <Vincent Chen>, this programming assignment is my own work
 # and I have not provided this code to any other student.
 def main():
     correct_answers = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']

@@ -1,3 +1,12 @@
+# File: <Stadium Seating>
+# Description: <It can ask how many tickets for each class of seats were sold, then displays the amount of income generated from ticket sales. >
+# Assignment Name and Number:7. Stadium Seating
+#
+# Name: <Vincent Chen>
+# GitHub: <https://github.com/chenshangxian/pythoncoding>
+#
+# On my honor, <Vincent Chen>, this programming assignment is my own work
+# and I have not provided this code to any other student.
 def income_from_class_a(tickets_sold):
     return tickets_sold * 20
 def income_from_class_b(tickets_sold):
