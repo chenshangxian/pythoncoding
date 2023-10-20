@@ -1,11 +1,11 @@
-# File: <NAME OF FILE>
-# Description: <A DESCRIPTION OF YOUR PROGRAM>
-# Assignment Name and Number: 
+# File: <Trivia Game>
+# Description: <Starting with player 1, each player gets a turn at answering 5 trivia questions. When a question is displayed, 4 possible answers are also displayed. Only one of the answers is correct, and if the player selects the correct answer, he or she earns a point.• After answers have been selected for all the questions, the program displays the number of points earned by each player and declares the player with the highest number of points the winner.>
+# Assignment Name and Number: 9. Trivia Game
 #
-# Name: <YOUR NAME>
-# GitHub: <YOUR GitHub>
+# Name: <Vincent Chen>
+# GitHub: <https://github.com/chenshangxian/pythoncoding>
 #
-# On my honor, <YOUR NAME>, this programming assignment is my own work
+# On my honor, <Vincent Chen>, this programming assignment is my own work
 # and I have not provided this code to any other student.
 class Question:
     def __init__(self, question, ans1, ans2, ans3, ans4, correct_ans_no):
@@ -22,19 +22,16 @@ class Question:
     def get_correct_answer(self):
         return self.__correct_ans_no
 def create_questions():
-    q1 = Question("Who is Crespi's teacher?", "Mr.Dwyer", "Dr.Bengford", "Mr.Lopez", "Mrs.Yang", 3)
+    q1 = Question("Who is Crespi's Math teacher?", "Mr.Dwyer", "Dr.Bengford", "Mr.Lopez", "Mrs.Yang", 3)
     q2 = Question("Which classroom is mathematic room?", "12", "1", "22", "17", 3)
     q3 = Question("Which is Kevin's Chinese name?", "Zhouyibo", "Wilson", "Liuzitao", "Kevin", 3)
     q4 = Question("Who is the current President of the United States?", "Richard M. Nixon", "Barack Hussein Obama", "Joseph Robinette Biden Jr.", "Donald John Trump", 3)
     q5 = Question("What is the middle letter of celts?", "c", "s", "t", "l", 4)
-
     return [q1, q2, q3, q4, q5] * 2 
-    
 def main():
     questions_list = create_questions()
     players = ["Player 1", "Player 2"]
     scores = [0, 0]
-
     for i in range(2):
         print("It's",players[i],"s turn!")
         for j in range(5):
@@ -45,11 +42,9 @@ def main():
             ans_player=int(input("Please input your answer"))
             if(ans_player==questions_list[j].get_correct_answer()):
                 scores[i]+=1
-
     print("Scores:")
     for i in range(2):
         print("player",i+1,"gets",scores[i],"points")
-
     if scores[0] > scores[1]:
         print("Player 1 wins!")
     elif scores[0] < scores[1]:

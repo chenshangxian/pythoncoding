@@ -1,11 +1,11 @@
-# File: <NAME OF FILE>
-# Description: <A DESCRIPTION OF YOUR PROGRAM>
-# Assignment Name and Number: 
+# File: <Pet Class>
+# Description: <It can use the object’s accessor methods to retrieve the pet’s name, type, and age and display this data on the screen.>
+# Assignment Name and Number:1. Pet Class
 #
-# Name: <YOUR NAME>
-# GitHub: <YOUR GitHub>
+# Name: <Vincent Chen>
+# GitHub: <https://github.com/chenshangxian/pythoncoding>
 #
-# On my honor, <YOUR NAME>, this programming assignment is my own work
+# On my honor, <Vincent Chen>, this programming assignment is my own work
 # and I have not provided this code to any other student.
 class Pet:
     def __init__(self,name,animal_type,age):

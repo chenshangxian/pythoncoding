@@ -2,10 +2,10 @@
 # Description: <A DESCRIPTION OF YOUR PROGRAM>
 # Assignment Name and Number: 
 #
-# Name: <YOUR NAME>
-# GitHub: <YOUR GitHub>
+# Name: <Vincent Chen>
+# GitHub: <https://github.com/chenshangxian/pythoncoding>
 #
-# On my honor, <YOUR NAME>, this programming assignment is my own work
+# On my honor, <Vincent Chen>, this programming assignment is my own work
 # and I have not provided this code to any other student.
 import random
 def main():
@@ -20,10 +20,10 @@ def main():
             print("Correct!")
             correct_count += 1
         else:
-            print(f"Sorry, the correct answer is {capital}.")
+            print("Sorry, the correct answer is",capital)
             incorrect_count += 1
         another = input("Do you want another question? (yes/no) ")
         if another != 'yes':
             break
-    print(f"You answered {correct_count} questions correctly and {incorrect_count} incorrectly.")
+    print("You answered",correct_count,"questions correctly and",incorrect_count,"incorrectly.")
 main()
