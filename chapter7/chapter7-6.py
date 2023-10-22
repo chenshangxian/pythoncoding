@@ -9,8 +9,11 @@
 # and I have not provided this code to any other student.
 import random
 def roll(number_of_throws):
-    rolls = [random.randint(1, 6) for _ in range(number_of_throws)]
+    rolls = []
+    for i in range(number_of_throws):
+        rolls.append(random.randint(1, 6))
     return sorted(rolls)
+
 def main():
     number_of_throws = int(input("Please enter a positive integer: "))
     print(roll(number_of_throws))
