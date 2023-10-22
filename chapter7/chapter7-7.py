@@ -9,8 +9,7 @@
 # and I have not provided this code to any other student.
 def main():
     correct_answers = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
-    filename = '/Users/VincentChen/Desktop/student_answers.txt'
-    infile = open(filename, 'r')
+    infile = open('student_answers.txt', 'r')
     student_answers = infile.readlines()
     passed, correct_count, incorrect_answers = check_answers(correct_answers, student_answers)
     if passed:
