@@ -10,21 +10,21 @@
 import random
 def read_responses(filename):
     infile = open(filename, 'r')
-    contents = infile.read()
+    answer_list = []
+    for i in range(12):
+        line = infile.readline()
+        line = line.rstrip("\n")
+        answer_list.append(line)
     infile.close()
-    return [response.strip() for response in contents.splitlines()]
+    return answer_list
 def magic_8_ball(responses):
-    while True:
+    question = input("Ask the Magic 8 Ball a yes or no question (or press Enter to quit): ")
+    while question != "quit":
+        random_response = random.choice(responses)
+        print("You asked:", question)
+        print("Magic 8 Ball says:",random_response)
         question = input("Ask the Magic 8 Ball a yes or no question (or press Enter to quit): ")
-        if not question:
-            break
-        if input("Shake the Magic 8 Ball? (Press Enter to shake, or type 'quit' to exit): ")== 'quit':
-            break
-        else:
-            random_response = random.choice(responses)
-            print("You asked:", question)
-            print("Magic 8 Ball says:",random_response)
-responses = read_responses("/Users/VincentChen/Desktop/8_ball_responses.txt")
+responses = read_responses("8_ball_responses.txt")
 if responses:
     print("Welcome to the Magic 8 Ball!")
     magic_8_ball(responses)
