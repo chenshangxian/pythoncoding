@@ -1,3 +1,12 @@
+# File: <Rock, Paper, Scissors Game>
+# Description: <It canlet the user play the game of Rock, Paper, Scissors against the computer.>
+# Assignment Name and Number:21. Rock, Paper, Scissors Game
+#
+# Name: <Vincent Chen>
+# GitHub: <https://github.com/chenshangxian/pythoncoding>
+#
+# On my honor, <Vincent Chen>, this programming assignment is my own work
+# and I have not provided this code to any other student.
 import random
 def get_computer_choice():
     choice = random.randint(1, 3)

@@ -1,3 +1,12 @@
+# File: <Paint Job Estimator>
+# Description: <It can ask the user to enter the square feet of wall space to be painted and the price of the paint per gallon. >
+# Assignment Name and Number:8. Paint Job Estimator
+#
+# Name: <Vincent Chen>
+# GitHub: <https://github.com/chenshangxian/pythoncoding>
+#
+# On my honor, <Vincent Chen>, this programming assignment is my own work
+# and I have not provided this code to any other student.
 def main():
     SQ_FEET_PER_GALLON = 112
     LABOR_HOURS_PER_GALLON = 8
